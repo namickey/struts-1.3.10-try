@@ -8,7 +8,9 @@
 <!-- ================================================ Form Bean Definitions -->
 
     <form-beans>
-
+        <form-bean name="itemRegistForm" type="com.example.demo.web.master.item.ItemRegistForm"/>
+        <form-bean name="itemEditForm" type="com.example.demo.web.master.item.ItemEditForm"/>
+        <form-bean name="itemSearchForm" type="com.example.demo.web.master.item.ItemSearchForm"/>
     </form-beans>
 
 <!-- ========================================= Global Exception Definitions -->
@@ -25,14 +27,32 @@
 <!-- =========================================== Action Mapping Definitions -->
 
     <action-mappings>
+        <!-- ホーム画面 -->
         <action path="/home" forward="/WEB-INF/home.jsp"/>
+        <!--マスタ管理　item登録画面-->
         <action path="/master/item/regist/index" forward="/WEB-INF/master/item/regist/index.jsp"/>
-        <action path="/master/item/regist/confirm" type="com.example.demo.web.master.item.ItemConfirmAction">
+        <action path="/master/item/regist/confirm" type="com.example.demo.web.master.item.ItemRegistConfirmAction" name="itemRegistForm" scope="request" validate="false">
             <forward name="ok" path="/WEB-INF/master/item/regist/confirm.jsp"/>
         </action>
-        <action path="/master/item/regist/regist" type="com.example.demo.web.master.item.ItemRegistAction">
+        <action path="/master/item/regist/regist" type="com.example.demo.web.master.item.ItemRegistAction" name="itemRegistForm" scope="request" validate="false">
             <forward name="ok" path="/WEB-INF/master/item/regist/complete.jsp"/>
             <forward name="ng" path="/master/item/regist/index"/>
+        </action>
+        <!--マスタ管理　item修正画面-->
+        <action path="/master/item/edit/index" type="com.example.demo.web.master.item.ItemEditAction" name="itemEditForm" scope="request" validate="false">
+            <forward name="ok" path="/WEB-INF/master/item/edit/index.jsp"/>
+        </action>
+        <action path="/master/item/edit/confirm" type="com.example.demo.web.master.item.ItemEditAction" name="itemEditForm" scope="request" validate="false">
+            <forward name="ok" path="/WEB-INF/master/item/edit/confirm.jsp"/>
+        </action>
+        <action path="/master/item/edit/edit" type="com.example.demo.web.master.item.ItemEditAction" name="itemEditForm" scope="request" validate="false">
+            <forward name="ok" path="/WEB-INF/master/item/edit/complete.jsp"/>
+            <forward name="ng" path="/master/item/edit/index"/>
+        </action>
+        <!--マスタ管理　item検索画面-->
+        <action path="/master/item/search/index" forward="/WEB-INF/master/item/search/index.jsp"/>
+        <action path="/master/item/search/search" type="com.example.demo.web.master.item.ItemSearchAction" name="itemSearchForm" scope="request" validate="false">
+            <forward name="ok" path="/WEB-INF/master/item/search/index.jsp"/>
         </action>
     </action-mappings>
 

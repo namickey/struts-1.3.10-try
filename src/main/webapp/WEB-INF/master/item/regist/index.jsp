@@ -11,7 +11,11 @@
 <body>
 
 <p>item登録画面</p>
-<p><html:link action="/master/item/regist/confirm">確認</html:link></p>
+<html:form action="/master/item/regist/confirm">
+    商品名: <html:text property="itemName"/><br/>
+    価格: <html:text property="price"/><br/>
+    <html:submit value="確認"/>
+</html:form>
 <p><html:link action="home">home</html:link></p>
 
 </body>

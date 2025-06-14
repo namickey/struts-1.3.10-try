@@ -8,12 +8,12 @@ import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
 
-public class ItemConfirmAction extends Action{
+public class ItemRegistConfirmAction extends Action{
     
     public ActionForward execute(ActionMapping mapping, ActionForm actionForm,
                                  HttpServletRequest request, HttpServletResponse response) {
 
-        System.out.println("ItemConfirmAction executed");
+        System.out.println("ItemRegistConfirmAction executed");
 
         return mapping.findForward("ok");
     }

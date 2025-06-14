@@ -5,16 +5,18 @@
 
 <html:html>
 <head>
-<title>home</title>
+<title>item修正画面</title>
 <html:base/>
 </head>
-<body >
+<body>
 
-    <ul>
-        <li><html:link action="/master/item/regist/index">item登録</html:link></li>
-        <li><html:link action="/master/item/edit/index">item修正</html:link></li>
-        <li><html:link action="/master/item/search/index">item検索</html:link></li>
-    </ul>
+<p>item修正画面</p>
+<html:form action="/master/item/edit/confirm">
+    商品名: <html:text property="itemName"/><br/>
+    価格: <html:text property="price"/><br/>
+    <html:submit value="確認"/>
+</html:form>
+<p><html:link action="home">home</html:link></p>
 
 </body>
 </html:html>
