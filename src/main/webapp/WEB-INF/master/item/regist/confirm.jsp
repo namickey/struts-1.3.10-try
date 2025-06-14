@@ -7,15 +7,37 @@
 <head>
 <title>item登録確認画面</title>
 <html:base/>
+<style>
+    .form-label {
+        display: inline-block;
+        width: 100px;
+    }
+</style>
 </head>
 <body>
 
 <p>item登録確認画面</p>
-<div>ID: <bean:write name="itemRegistForm" property="id"/></div>
-<div>商品名: <bean:write name="itemRegistForm" property="itemName"/></div>
-<div>価格: <bean:write name="itemRegistForm" property="price"/></div>
-<div>分類: <bean:write name="itemRegistForm" property="groupid"/></div>
-<div>登録日: <bean:write name="itemRegistForm" property="registDate"/></div>
+<p><html:link action="home">home画面へ</html:link></p>
+<div class="form-row">
+    <span class="form-label">ID</span>
+    <span><bean:write name="itemRegistForm" property="id"/></span>
+</div>
+<div class="form-row">
+    <span class="form-label">商品名</span>
+    <span><bean:write name="itemRegistForm" property="itemName"/></span>
+</div>
+<div class="form-row">
+    <span class="form-label">価格</span>
+    <span><bean:write name="itemRegistForm" property="price"/></span>
+</div>
+<div class="form-row">
+    <span class="form-label">分類</span>
+    <span><bean:write name="itemRegistForm" property="groupid"/></span>
+</div>
+<div class="form-row">
+    <span class="form-label">登録日</span>
+    <span><bean:write name="itemRegistForm" property="registDate"/></span>
+</div>
 <html:form action="/master/item/regist/regist">
     <html:hidden property="id"/>
     <html:hidden property="itemName"/>
@@ -24,7 +46,6 @@
     <html:hidden property="registDate"/>
     <html:submit value="登録"/>
 </html:form>
-<p><html:link action="home">home</html:link></p>
 
 </body>
 </html:html>

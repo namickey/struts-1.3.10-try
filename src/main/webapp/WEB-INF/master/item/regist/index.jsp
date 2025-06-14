@@ -12,9 +12,6 @@
         display: inline-block;
         width: 100px;
     }
-    .form-row {
-        margin-bottom: 10px;
-    }
 </style>
 </head>
 <body>
