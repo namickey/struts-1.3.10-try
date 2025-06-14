@@ -6,19 +6,19 @@
 <!DOCTYPE html>
 <html:html>
 <head>
-<title>item登録確認画面</title>
-<meta content="text/html; charset=UTF-8"/>
-<html:base/>
-<style>
-    .form-label {
-        display: inline-block;
-        width: 100px;
-    }
-</style>
+    <title>item登録確認画面</title>
+    <meta content="text/html; charset=UTF-8"/>
+    <html:base/>
+    <style>
+        .form-label {
+            display: inline-block;
+            width: 100px;
+        }
+    </style>
 </head>
 <body>
 
-<p>item登録確認画面</p>
+<h1>item登録確認画面</h1>
 <p><html:link action="home">home画面へ</html:link></p>
 <div class="form-row">
     <span class="form-label">ID</span>
@@ -47,6 +47,14 @@
     <html:hidden property="groupid"/>
     <html:hidden property="registDate"/>
     <html:submit value="登録"/>
+</html:form>
+<html:form action="/master/item/regist/index">
+    <html:hidden property="id"/>
+    <html:hidden property="itemName"/>
+    <html:hidden property="price"/>
+    <html:hidden property="groupid"/>
+    <html:hidden property="registDate"/>
+    <html:submit value="戻る"/>
 </html:form>
 
 </body>

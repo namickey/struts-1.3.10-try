@@ -6,19 +6,19 @@
 <!DOCTYPE html>
 <html:html>
 <head>
-<title>item登録画面</title>
-<meta content="text/html; charset=UTF-8"/>
-<html:base/>
-<style>
-    .form-label {
-        display: inline-block;
-        width: 100px;
-    }
-</style>
+    <title>item登録画面</title>
+    <meta content="text/html; charset=UTF-8"/>
+    <html:base/>
+    <style>
+        .form-label {
+            display: inline-block;
+            width: 100px;
+        }
+    </style>
 </head>
 <body>
 
-<p>item登録画面</p>
+<h1>item登録画面</h1>
 <p><html:link action="home">home画面へ</html:link></p>
 
 <html:form action="/master/item/regist/confirm">

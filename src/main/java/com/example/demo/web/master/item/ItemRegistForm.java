@@ -3,6 +3,7 @@ package com.example.demo.web.master.item;
 import org.apache.struts.action.ActionForm;
 
 public class ItemRegistForm extends ActionForm {
+
     private Integer id;
     private String itemName;
     private Integer price;
@@ -19,4 +20,12 @@ public class ItemRegistForm extends ActionForm {
     public void setGroupid(String groupid) { this.groupid = groupid; }
     public String getRegistDate() { return registDate; }
     public void setRegistDate(String registDate) { this.registDate = registDate; }
+
+    public boolean isEmpty() {
+        return (id == null || id <= 0) &&
+               (itemName == null || itemName.isEmpty()) &&
+               (price == null || price <= 0) &&
+               (groupid == null || groupid.isEmpty()) &&
+               (registDate == null || registDate.isEmpty());
+    }
 }
