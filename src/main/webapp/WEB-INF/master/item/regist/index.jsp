@@ -3,9 +3,11 @@
 <%@ taglib uri="http://struts.apache.org/tags-html" prefix="html" %>
 <%@ taglib uri="http://struts.apache.org/tags-logic" prefix="logic" %>
 
+<!DOCTYPE html>
 <html:html>
 <head>
 <title>item登録画面</title>
+<meta content="text/html; charset=UTF-8"/>
 <html:base/>
 <style>
     .form-label {

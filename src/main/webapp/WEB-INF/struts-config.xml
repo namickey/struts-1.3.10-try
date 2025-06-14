@@ -30,7 +30,9 @@
         <!-- ホーム画面 -->
         <action path="/home" forward="/WEB-INF/home.jsp"/>
         <!--マスタ管理　item登録画面-->
-        <action path="/master/item/regist/index" forward="/WEB-INF/master/item/regist/index.jsp"/>
+        <action path="/master/item/regist/index" type="com.example.demo.web.master.item.ItemRegistAction" name="itemRegistForm" scope="request" validate="false">
+            <forward name="ok" path="/WEB-INF/master/item/regist/index.jsp"/>
+        </action>
         <action path="/master/item/regist/confirm" type="com.example.demo.web.master.item.ItemRegistConfirmAction" name="itemRegistForm" scope="request" validate="false">
             <forward name="ok" path="/WEB-INF/master/item/regist/confirm.jsp"/>
         </action>
