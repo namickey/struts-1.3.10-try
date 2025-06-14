@@ -11,11 +11,17 @@
 <body>
 
 <p>item登録確認画面</p>
-商品名: <bean:write name="itemRegistForm" property="itemName"/><br/>
-価格: <bean:write name="itemRegistForm" property="price"/><br/>
+<div>ID: <bean:write name="itemRegistForm" property="id"/></div>
+<div>商品名: <bean:write name="itemRegistForm" property="itemName"/></div>
+<div>価格: <bean:write name="itemRegistForm" property="price"/></div>
+<div>分類: <bean:write name="itemRegistForm" property="groupid"/></div>
+<div>登録日: <bean:write name="itemRegistForm" property="registDate"/></div>
 <html:form action="/master/item/regist/regist">
+    <html:hidden property="id"/>
     <html:hidden property="itemName"/>
     <html:hidden property="price"/>
+    <html:hidden property="groupid"/>
+    <html:hidden property="registDate"/>
     <html:submit value="登録"/>
 </html:form>
 <p><html:link action="home">home</html:link></p>
