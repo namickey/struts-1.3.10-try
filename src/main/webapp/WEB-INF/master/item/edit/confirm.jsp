@@ -19,11 +19,26 @@
     <h1>商品修正内容の確認</h1>
     <p><html:link action="home">home</html:link></p>
     <html:form action="/master/item/edit/edit">
-        <div class="form-row"> <span class="form-label">ID</span><bean:write name="itemEditForm" property="id"/></div>
-        <div class="form-row"> <span class="form-label">商品名</span><bean:write name="itemEditForm" property="itemName"/></div>
-        <div class="form-row"> <span class="form-label">価格</span><bean:write name="itemEditForm" property="price"/></div>
-        <div class="form-row"> <span class="form-label">グループID</span><bean:write name="itemEditForm" property="groupid"/></div>
-        <div class="form-row"> <span class="form-label">登録日</span><bean:write name="itemEditForm" property="registDate"/></div>
+        <div>
+            <span class="form-label">ID</span>
+            <bean:write name="itemEditForm" property="id"/>
+        </div>
+        <div>
+            <span class="form-label">商品名</span>
+            <bean:write name="itemEditForm" property="itemName"/>
+        </div>
+        <div>
+            <span class="form-label">価格</span>
+            <bean:write name="itemEditForm" property="price"/>
+        </div>
+        <div>
+            <span class="form-label">グループID</span>
+            <bean:write name="itemEditForm" property="groupid"/>
+        </div>
+        <div>
+            <span class="form-label">登録日</span>
+            <bean:write name="itemEditForm" property="registDate"/>
+        </div>
         <html:hidden property="id"/>
         <html:hidden property="itemName"/>
         <html:hidden property="price"/>

@@ -19,7 +19,7 @@
 
 <!-- 検索結果表示（ダミー） -->
 <logic:notEmpty name="itemList">
-    <table border="1">
+    <table style="border: 1px solid black;">
         <tr><th>商品名</th><th>価格</th></tr>
         <logic:iterate id="item" name="itemList">
             <tr>

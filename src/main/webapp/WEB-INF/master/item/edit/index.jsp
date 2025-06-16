@@ -21,11 +21,25 @@
 <p><html:link action="home">home</html:link></p>
 
 <html:form action="/master/item/edit/confirm">
-    <div class="form-row"> <span class="form-label">ID</span><html:text property="id"/></div>
-    <div class="form-row"> <span class="form-label">商品名</span><html:text property="itemName"/></div>
-    <div class="form-row"> <span class="form-label">価格</span><html:text property="price"/></div>
-    <div class="form-row"> <span class="form-label">グループID</span><html:text property="groupid"/></div>
-    <div class="form-row"> <span class="form-label">登録日</span><html:text property="registDate"/></div>
+    <div>
+        <span class="form-label">ID</span>
+        <html:text property="id"/>
+    </div>
+    <div>
+        <span class="form-label">商品名</span>
+        <html:text property="itemName"/>
+    </div>
+    <div>
+        <span class="form-label">価格</span>
+        <html:text property="price"/></div>
+    <div>
+        <span class="form-label">グループID</span>
+        <html:text property="groupid"/>
+    </div>
+    <div>
+        <span class="form-label">登録日</span>
+        <html:text property="registDate"/>
+    </div>
     <html:submit value="確認"/>
 </html:form>
 

@@ -19,27 +19,27 @@
 
 <h1>item登録確認画面</h1>
 <p><html:link action="home">home画面へ</html:link></p>
-<div class="form-row">
-    <span class="form-label">ID</span>
-    <span><bean:write name="itemRegistForm" property="id"/></span>
-</div>
-<div class="form-row">
-    <span class="form-label">商品名</span>
-    <span><bean:write name="itemRegistForm" property="itemName"/></span>
-</div>
-<div class="form-row">
-    <span class="form-label">価格</span>
-    <span><bean:write name="itemRegistForm" property="price"/></span>
-</div>
-<div class="form-row">
-    <span class="form-label">分類</span>
-    <span><bean:write name="itemRegistForm" property="groupid"/></span>
-</div>
-<div class="form-row">
-    <span class="form-label">登録日</span>
-    <span><bean:write name="itemRegistForm" property="registDate"/></span>
-</div>
 <html:form action="/master/item/regist/regist">
+    <div>
+        <span class="form-label">ID</span>
+        <span><bean:write name="itemRegistForm" property="id"/></span>
+    </div>
+    <div>
+        <span class="form-label">商品名</span>
+        <span><bean:write name="itemRegistForm" property="itemName"/></span>
+    </div>
+    <div>
+        <span class="form-label">価格</span>
+        <span><bean:write name="itemRegistForm" property="price"/></span>
+    </div>
+    <div>
+        <span class="form-label">分類</span>
+        <span><bean:write name="itemRegistForm" property="groupid"/></span>
+    </div>
+    <div>
+        <span class="form-label">登録日</span>
+        <span><bean:write name="itemRegistForm" property="registDate"/></span>
+    </div>
     <html:hidden property="id"/>
     <html:hidden property="itemName"/>
     <html:hidden property="price"/>
@@ -47,6 +47,7 @@
     <html:hidden property="registDate"/>
     <html:submit value="登録"/>
 </html:form>
+
 <html:form action="/master/item/regist/index">
     <html:hidden property="id"/>
     <html:hidden property="itemName"/>
