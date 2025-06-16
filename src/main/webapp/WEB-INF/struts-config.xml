@@ -56,6 +56,10 @@
         <action path="/master/item/search/search" type="com.example.demo.web.master.item.ItemSearchAction" name="itemSearchForm" scope="request" validate="false">
             <forward name="ok" path="/WEB-INF/master/item/search/index.jsp"/>
         </action>
+        <!--マスタ管理　item詳細画面-->
+        <action path="/master/item/detail/index" type="com.example.demo.web.master.item.ItemDetailAction" name="itemDetailForm" scope="request" validate="false">
+            <forward name="ok" path="/WEB-INF/master/item/detail/index.jsp"/>
+        </action>
     </action-mappings>
 
 <!-- ======================================== Message Resources Definitions -->
