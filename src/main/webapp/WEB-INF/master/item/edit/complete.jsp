@@ -4,9 +4,8 @@
 <!DOCTYPE html>
 <html:html>
 <head>
+    <meta charset="UTF-8">
     <title>商品修正完了</title>
-    <meta content="text/html; charset=UTF-8"/>
-    <html:base/>
 </head>
 <body>
     <h1>item修正完了画面</h1>

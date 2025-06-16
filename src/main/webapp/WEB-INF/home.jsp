@@ -5,10 +5,10 @@
 
 <html:html>
 <head>
-<title>home</title>
-<html:base/>
+    <meta charset="UTF-8">
+    <title>home</title>
 </head>
-<body >
+<body>
 
     <ul>
         <li><html:link action="/master/item/regist/index">item登録</html:link></li>

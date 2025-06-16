@@ -6,9 +6,8 @@
 <!DOCTYPE html>
 <html:html>
 <head>
+    <meta charset="UTF-8">
     <title>商品修正確認</title>
-    <meta content="text/html; charset=UTF-8"/>
-    <html:base/>
     <style>
         .form-label {
             display: inline-block;

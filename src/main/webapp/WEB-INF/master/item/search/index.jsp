@@ -5,8 +5,8 @@
 
 <html:html>
 <head>
-<title>item検索画面</title>
-<html:base/>
+    <meta charset="UTF-8">
+    <title>item検索画面</title>
 </head>
 <body>
 

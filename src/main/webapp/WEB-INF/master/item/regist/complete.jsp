@@ -4,9 +4,8 @@
 <!DOCTYPE html>
 <html:html>
 <head>
+    <meta charset="UTF-8">
     <title>商品登録完了</title>
-    <meta content="text/html; charset=UTF-8"/>
-    <html:base/>
 </head>
 <body>
     <h1>item登録完了画面</h1>

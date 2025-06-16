@@ -6,9 +6,8 @@
 <!DOCTYPE html>
 <html:html>
 <head>
+    <meta charset="UTF-8">
     <title>item登録確認画面</title>
-    <meta content="text/html; charset=UTF-8"/>
-    <html:base/>
     <style>
         .form-label {
             display: inline-block;
